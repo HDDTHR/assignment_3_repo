@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std; 
 
 
@@ -9,9 +10,9 @@ using namespace std;
 //todo
 string surroundWithCharacter(string str, char c) {
   int n=0;
-    for(i=0;str[i]!='\0';i++){      // alt syntax str.length
-      n++;
-    }
+    n=str.length;
+    str.resize(n+2)
+
     for(int i=n;i>=0;i--){      
       str[i+1]=str[i];             
     }
