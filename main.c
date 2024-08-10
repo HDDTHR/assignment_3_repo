@@ -1,13 +1,23 @@
 #include <iostream>
-using namespace std;
+#include <string>
+using namespace std; 
 
 
 // Example: 
 // str = "nvelop"
 // c = "e"
 // result -> envelope
+//todo
 string surroundWithCharacter(string str, char c) {
-  // TODO
+  int n=0;
+    n=str.length;
+    str.resize(n+2)
+
+    for(int i=n;i>=0;i--){      
+      str[i+1]=str[i];             
+    }
+    str[0]=c;
+    str[n+1]=c;
   return str;
 } 
 
