@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 using namespace std;  
+using namespace std; 
 
 
 // Example: 
 // str = "nvelop"
 // c = "e"
 // result -> envelope
+//todo
 string surroundWithCharacter(string str, char c) {
   int n=0;
     for(i=0;str[i]!='\0';i++){      // alt syntax str.length
