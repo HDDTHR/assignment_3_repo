@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+using namespace std;  
 
 
 // Example: 
@@ -7,7 +8,15 @@ using namespace std;
 // c = "e"
 // result -> envelope
 string surroundWithCharacter(string str, char c) {
-  // TODO
+  int n=0;
+    for(i=0;str[i]!='\0';i++){      // alt syntax str.length
+      n++;
+    }
+    for(int i=n;i>=0;i--){      
+      str[i+1]=str[i];             
+    }
+    str[0]=c;
+    str[n+1]=c;
   return str;
 } 
 
